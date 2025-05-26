@@ -1,0 +1,23 @@
+/* Global resets and essential styles only */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Remove default focus outlines and let components handle their own focus styles */
+*:focus {
+  outline: none;
+}
+
+/* Ensure consistent text selection styling */
+::selection {
+  background: rgba(102, 126, 234, 0.2);
+  color: inherit;
+}

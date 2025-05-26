@@ -1,0 +1,101 @@
+/* Tax breakdown table */
+.tax-breakdown {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.tax-breakdown h3 {
+  background: #f7fafc;
+  padding: 20px 25px;
+  margin: 0;
+  color: #2d3748;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.bracket-table {
+  overflow-x: auto;
+}
+
+.tax-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.table-header {
+  background: #667eea;
+  color: white;
+}
+
+.table-header th {
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: left;
+  border: none;
+}
+
+.table-row {
+  border-bottom: 1px solid #e2e8f0;
+  transition: background-color 0.2s ease;
+}
+
+.table-row:hover {
+  background: #f7fafc;
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.table-row td {
+  padding: 15px 25px;
+  border: none;
+  text-align: left;
+}
+
+.bracket-range {
+  font-weight: 500;
+  color: #4a5568;
+}
+
+.rate {
+  font-weight: 600;
+  color: #667eea;
+}
+
+.taxable-income,
+.tax-owed {
+  font-weight: 500;
+}
+
+.tax-owed {
+  color: #38a169;
+  font-weight: 600;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .tax-table {
+    font-size: 0.85rem;
+  }
+
+  .table-header th,
+  .table-row td {
+    padding: 12px 15px;
+  }
+
+  /* Make table horizontally scrollable on very small screens */
+  .bracket-table {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .tax-table {
+    min-width: 500px; /* Minimum width to ensure table remains readable */
+  }
+}

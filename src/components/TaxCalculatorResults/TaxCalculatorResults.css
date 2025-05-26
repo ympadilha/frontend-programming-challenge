@@ -1,0 +1,56 @@
+.tax-results {
+  margin-top: 30px;
+}
+
+.tax-results h2 {
+  color: #2d3748;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.summary-card {
+  background: linear-gradient(135deg, #48bb78, #38a169);
+  color: white;
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 25px rgba(72, 187, 120, 0.2);
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.summary-item:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.summary-item label {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.summary-item .value {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.summary-item .total-tax {
+  font-size: 1.4rem;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .summary-card {
+    padding: 20px;
+  }
+}
